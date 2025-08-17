@@ -15,7 +15,7 @@ const client = new OpenAI({
 async function main(){
 
     const result = await client.chat.completions.create({
-            model : "openai/gpt-oss-20b",
+          model : "openai/gpt-oss-20b",
         messages : [
         {role : "system", content : "You are assistant"},
         {role : "user", content : "What is the other name of india"},
